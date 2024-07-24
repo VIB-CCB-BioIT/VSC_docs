@@ -17,19 +17,21 @@ For these steps you need to have obtained a VSC account, added as a member for a
 6. Detach tmux session `control + b` followed by `d` 
 7. Check the node you have been assigned `squeue --cluster wice` and copy the node name specified under `NODELIST (REASON)` 
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/0e2edaab-8abf-4a7f-855c-48e1ff0d3d94/47511824-40ad-432c-b981-2b0f46fb6999/Untitled.png)
+    <img width="680" alt="squeue" src="https://github.com/user-attachments/assets/95224fd7-9c3b-4f16-a43e-8971388fbbb3">
     
-8. Launch VS Code and at the bottom left, click the blue remote-connect button and select `connect to host` or `connect current window to host` if you don’t want to open a new VS Code window. If this doesn’t show up, you might have to select `ssh` in the dropdown menu first. See screenshots below
+9. Launch VS Code and at the bottom left, click the blue remote-connect button and select `connect to host` or `connect current window to host` if you don’t want to open a new VS Code window. If this doesn’t show up, you might have to select `ssh` in the dropdown menu first. See screenshots below
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/0e2edaab-8abf-4a7f-855c-48e1ff0d3d94/82153fad-39b6-4863-8753-dc332af4ff08/Untitled.png)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/0e2edaab-8abf-4a7f-855c-48e1ff0d3d94/66f8238a-3b36-4fd4-bf6b-78d0eefbe7e2/Untitled.png)
+<img width="1018" alt="vs_2" src="https://github.com/user-attachments/assets/957b9afe-1464-482d-9bd4-5ead8cd8b4cd">
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/0e2edaab-8abf-4a7f-855c-48e1ff0d3d94/78f0dcaf-9a35-4e31-a7b4-554ce7438a3b/Untitled.png)
+<img width="1018" alt="vs_2" src="https://github.com/user-attachments/assets/7387695d-a0cd-48a5-a1fb-2913ebdb7631">
+
+<img width="1018" alt="vs_3" src="https://github.com/user-attachments/assets/82b5d6b1-cb91-4695-b342-979ec8d26814">
+
 
 1. After connecting you should see that you’re connected to the login node at the bottom left of the screen (see screenshot). Initial connecting to a login node might take a minute
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/0e2edaab-8abf-4a7f-855c-48e1ff0d3d94/9c1ed3e8-c816-48c5-95d5-cf422519b87e/Untitled.png)
+<img width="1018" alt="vs_4" src="https://github.com/user-attachments/assets/f1f64791-85ea-4a71-a2e1-3fa8f9d3ba49">
 
 Common errors:
 
