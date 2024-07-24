@@ -1,6 +1,6 @@
-Typical daily workflow of working on the VSC using VS Code.
+# Typical start-of-day workflow of working on the VSC using VS Code.
 
-For these steps you need to have obtained a VSC account, added as a member for a project (payment group), the ssh config file and vs code installed 
+For these steps you need to have obtained a VSC account, added as a member for a project (payment group), the ssh config file (available here [insert]), and vs code installed 
 
 1. Open local terminal
 2. Login to the login node: `ssh login`
