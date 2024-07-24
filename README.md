@@ -6,4 +6,4 @@ This config file should be added on your local computer/laptop (the one you use 
 Key changes to be made in each block are: vsc_id and, potentially the location of your `id_rsa` file.
 
 ## Daily workflow for setting up VS Code to work on the VSC
-A step-by-step guide of how I use VS Code to work on the VSC is available here in this repository [here](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/using_vsc_in_VScode.md)
+A step-by-step guide of how I use VS Code to work on the VSC is available in this repository [here](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/using_vsc_in_VScode.md)
