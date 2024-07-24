@@ -1,23 +1,29 @@
 # Typical start-of-day workflow of working on the VSC using VS Code.
 
 For these steps you need to have obtained a VSC account, added as a member for a project (payment group), the ssh config file (available here [insert]), and vs code installed 
+Also note that the screenshots will most likely not reflect how your terminal/VScode/command prompt looks like.
+
 
 1. Open local terminal
-2. Login to the login node: `ssh login`
-3. Open `tmux` or `screen` session. 
-4. tmux will be used in this example but either works.
-    
-    `tmux` or `tmux attach -t ${session_id}` if you already have a running tmux session that you want to use
+2. Login to the login node: `ssh login` - after logging in the genius login-screen should appear.
+   <img width="563" alt="image" src="https://github.com/user-attachments/assets/2921f743-0f0d-41ab-a4a2-0b4ba9600fda">
+4. Open `tmux` or `screen` session. 
+       tmux will be used in this example but either works.
+        `tmux` or `tmux attach -t ${session_id}` if you already have a running tmux session that you want to use
+    <img width="646" alt="image" src="https://github.com/user-attachments/assets/093b4839-67eb-42a6-b34a-0354f3b22e03">
+    <img width="646" alt="image" src="https://github.com/user-attachments/assets/8b39fc51-6bf7-48d6-ac70-2f012de5d4ea">
     
 5. Request a compute node. In this example we will request 1 node with 1 core and 5GB of memory for 1 hour. This is just an example and in reality you will be requesting more.
     
     This is submitting a job to the `batch` nodes using the lab of integrative genomics payment account `lp_lig` 
     `srun -n 1 -c 1 --mem 10G --time=1:00:00 -A lp_lig -p batch --cluster wice --pty bash -l`
+    <img width="646" alt="image" src="https://github.com/user-attachments/assets/619ed127-b84f-4efa-9f53-842ff1cb2352">
+
     
-6. Detach tmux session `control + b` followed by `d` 
+6. Detach tmux session `control + b` followed by `d`. This ensures that your job stays alive for the entire duration, even if your local computer/laptop disconnects from the internet or goes to sleep.
 7. Check the node you have been assigned `squeue --cluster wice` and copy the node name specified under `NODELIST (REASON)` 
     
-    <img width="680" alt="squeue" src="https://github.com/user-attachments/assets/95224fd7-9c3b-4f16-a43e-8971388fbbb3">
+    <img width="646" alt="image" src="https://github.com/user-attachments/assets/317f68df-465a-4040-b5fb-5557f006f18f">
     
 9. Launch VS Code and at the bottom left, click the blue remote-connect button and select `connect to host` or `connect current window to host` if you don’t want to open a new VS Code window. If this doesn’t show up, you might have to select `ssh` in the dropdown menu first. See screenshots below
 
