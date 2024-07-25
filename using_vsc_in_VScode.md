@@ -6,14 +6,16 @@ Also note that the screenshots will most likely not reflect how your terminal/VS
 
 1. Open local terminal
 2. Login to the login node: `ssh login` - after logging in, the genius login-screen should appear.
-   <img width="563" alt="image" src="https://github.com/user-attachments/assets/2921f743-0f0d-41ab-a4a2-0b4ba9600fda">
-4. Open `tmux` or `screen` session. 
+   <img width="563" alt="image" src="https://github.com/user-attachments/assets/2921f743-0f0d-41ab-a4a2-0b4ba9600fda" style="border: 2px solid grey;">
+   
+3. Open `tmux` or `screen` session. 
        tmux will be used in this example but either works.
         `tmux` or `tmux attach -t ${session_id}` if you already have a running tmux session that you want to use
-    <img width="646" alt="image" src="https://github.com/user-attachments/assets/093b4839-67eb-42a6-b34a-0354f3b22e03">
-    <img width="646" alt="image" src="https://github.com/user-attachments/assets/8b39fc51-6bf7-48d6-ac70-2f012de5d4ea">
+   
+    <img width="646" alt="image" src="https://github.com/user-attachments/assets/093b4839-67eb-42a6-b34a-0354f3b22e03" style="border: 2px solid grey;">
+    <img width="646" alt="image" src="https://github.com/user-attachments/assets/8b39fc51-6bf7-48d6-ac70-2f012de5d4ea" style="border: 2px solid grey;">
     
-5. Request a compute node. In this example we will request 1 node with 1 core and 5GB of memory for 1 hour. This is just an example and in reality you will be requesting more.
+4. Request a compute node. In this example we will request 1 node with 1 core and 5GB of memory for 1 hour. This is just an example and in reality you will be requesting more.
 
    A brief summary of the different parameters that can be adjusted based on specific use-cases:
    | Parameter | Description |
@@ -28,26 +30,26 @@ Also note that the screenshots will most likely not reflect how your terminal/VS
    This is submitting a job to the `batch` nodes using the lab of integrative genomics payment account `lp_lig`.
     
     `srun -n 1 -c 1 --mem 10G --time=1:00:00 -A lp_lig -p batch --cluster wice --pty bash -l`
-    <img width="646" alt="image" src="https://github.com/user-attachments/assets/619ed127-b84f-4efa-9f53-842ff1cb2352">
+    <img width="646" alt="image" src="https://github.com/user-attachments/assets/619ed127-b84f-4efa-9f53-842ff1cb2352" style="border: 2px solid grey;">
 
     
-7. Detach tmux session by writing `tmux detach` or by pressing the following keys: `control + b` followed by `d`. This ensures that your job stays alive for the entire duration, even if your local computer/laptop disconnects from the internet or goes to sleep.
-8. Check the node you have been assigned `squeue --cluster wice` and copy the node name specified under `NODELIST (REASON)` 
+5. Detach tmux session by writing `tmux detach` or by pressing the following keys: `control + b` followed by `d`. This ensures that your job stays alive for the entire duration, even if your local computer/laptop disconnects from the internet or goes to sleep.
+6. Check the node you have been assigned `squeue --cluster wice` and copy the node name specified under `NODELIST (REASON)` 
     
-    <img width="646" alt="image" src="https://github.com/user-attachments/assets/317f68df-465a-4040-b5fb-5557f006f18f">
+    <img width="646" alt="image" src="https://github.com/user-attachments/assets/317f68df-465a-4040-b5fb-5557f006f18f" style="border: 2px solid grey;">
     
-9. Launch VS Code and click the blue remote-connect button at the bottom left. Select `connect to host` from the dropdown menu or `connect current window to host` if you don’t want to open a new VS Code window. If this doesn’t show up, you might have to select `ssh` in the dropdown menu first. See screenshots below
+7. Launch VS Code and click the blue remote-connect button at the bottom left. Select `connect to host` from the dropdown menu or `connect current window to host` if you don’t want to open a new VS Code window. If this doesn’t show up, you might have to select `ssh` in the dropdown menu first. See screenshots below
 
-<img width="1018" alt="vs_2" src="https://github.com/user-attachments/assets/957b9afe-1464-482d-9bd4-5ead8cd8b4cd">
+<img width="1018" alt="vs_2" src="https://github.com/user-attachments/assets/957b9afe-1464-482d-9bd4-5ead8cd8b4cd" style="border: 2px solid grey;">
 
-<img width="1018" alt="vs_2" src="https://github.com/user-attachments/assets/7387695d-a0cd-48a5-a1fb-2913ebdb7631">
+<img width="1018" alt="vs_2" src="https://github.com/user-attachments/assets/7387695d-a0cd-48a5-a1fb-2913ebdb7631" style="border: 2px solid grey;">
 
-<img width="1018" alt="vs_3" src="https://github.com/user-attachments/assets/82b5d6b1-cb91-4695-b342-979ec8d26814">
+<img width="1018" alt="vs_3" src="https://github.com/user-attachments/assets/82b5d6b1-cb91-4695-b342-979ec8d26814" style="border: 2px solid grey;">
 
 
-1. After connecting you should see that you’re connected to the login node at the bottom left of the screen (see screenshot). Initial connecting to a login node might take a minute
+8. After connecting you should see that you’re connected to the login node at the bottom left of the screen (see screenshot). Initial connecting to a login node might take a minute
 
-<img width="1018" alt="vs_4" src="https://github.com/user-attachments/assets/f1f64791-85ea-4a71-a2e1-3fa8f9d3ba49">
+<img width="1018" alt="vs_4" src="https://github.com/user-attachments/assets/f1f64791-85ea-4a71-a2e1-3fa8f9d3ba49" style="border: 2px solid grey;">
 
 Common errors:
 
