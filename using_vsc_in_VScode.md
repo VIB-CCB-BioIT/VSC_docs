@@ -5,7 +5,7 @@ Also note that the screenshots will most likely not reflect how your terminal/VS
 
 
 1. Open local terminal
-2. Login to the login node: `ssh login` - after logging in the genius login-screen should appear.
+2. Login to the login node: `ssh login` - after logging in, the genius login-screen should appear.
    <img width="563" alt="image" src="https://github.com/user-attachments/assets/2921f743-0f0d-41ab-a4a2-0b4ba9600fda">
 4. Open `tmux` or `screen` session. 
        tmux will be used in this example but either works.
@@ -14,19 +14,29 @@ Also note that the screenshots will most likely not reflect how your terminal/VS
     <img width="646" alt="image" src="https://github.com/user-attachments/assets/8b39fc51-6bf7-48d6-ac70-2f012de5d4ea">
     
 5. Request a compute node. In this example we will request 1 node with 1 core and 5GB of memory for 1 hour. This is just an example and in reality you will be requesting more.
+
+   A brief summary of the different parameters that can be adjusted based on specific use-cases:
+   | Parameter | Description |
+   | ----------- | ----------- |
+   | `-n` / `--nodes` | The number of nodes you want to request, typically 1 |
+   | `-c` / `--cores` | The number of cores you want to request, number depends on use-case (typically 8-24 for interactive sessions) |
+   | `--mem` | The amount of memory you want to request, number depends on use-case (typically 50-250GB for interactive sessions) |
+   | `-A` / `--account` | Billing account to use |
+   | `-p` / `--partition` | Partition to submit to. More information about available partition [here](https://docs.vscentrum.be/leuven/tier2_hardware/wice_hardware.html#hardware-details) |
+   | `--cluster` | Which cluster to use out of genius and wice, typically wice |
+
+   This is submitting a job to the `batch` nodes using the lab of integrative genomics payment account `lp_lig`.
     
-    This is submitting a job to the `batch` nodes using the lab of integrative genomics payment account `lp_lig` 
     `srun -n 1 -c 1 --mem 10G --time=1:00:00 -A lp_lig -p batch --cluster wice --pty bash -l`
     <img width="646" alt="image" src="https://github.com/user-attachments/assets/619ed127-b84f-4efa-9f53-842ff1cb2352">
 
     
-6. Detach tmux session by writing `tmux detach` or `control + b` followed by `d`. This ensures that your job stays alive for the entire duration, even if your local computer/laptop disconnects from the internet or goes to sleep.
-7. Check the node you have been assigned `squeue --cluster wice` and copy the node name specified under `NODELIST (REASON)` 
+7. Detach tmux session by writing `tmux detach` or by pressing the following keys: `control + b` followed by `d`. This ensures that your job stays alive for the entire duration, even if your local computer/laptop disconnects from the internet or goes to sleep.
+8. Check the node you have been assigned `squeue --cluster wice` and copy the node name specified under `NODELIST (REASON)` 
     
     <img width="646" alt="image" src="https://github.com/user-attachments/assets/317f68df-465a-4040-b5fb-5557f006f18f">
     
-9. Launch VS Code and at the bottom left, click the blue remote-connect button and select `connect to host` or `connect current window to host` if you don’t want to open a new VS Code window. If this doesn’t show up, you might have to select `ssh` in the dropdown menu first. See screenshots below
-
+9. Launch VS Code and click the blue remote-connect button at the bottom left. Select `connect to host` from the dropdown menu or `connect current window to host` if you don’t want to open a new VS Code window. If this doesn’t show up, you might have to select `ssh` in the dropdown menu first. See screenshots below
 
 <img width="1018" alt="vs_2" src="https://github.com/user-attachments/assets/957b9afe-1464-482d-9bd4-5ead8cd8b4cd">
 
