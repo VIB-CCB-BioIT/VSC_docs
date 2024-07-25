@@ -7,3 +7,6 @@ Key changes to be made in each block are: vsc_id and, potentially the location o
 
 ## Daily workflow for setting up VS Code to work on the VSC
 A step-by-step guide of how I use VS Code to work on the VSC is available in this repository [here](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/using_vsc_in_VScode.md)
+
+## Convenient command aliases
+Some convenient aliases can be found here. Simply add them to your `.bashrc` or `.zshrc` (and reload the terminal or source the script like `source ~/.bashrc`)
