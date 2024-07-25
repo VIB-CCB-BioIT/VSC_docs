@@ -1,0 +1,8 @@
+# Aliases
+alias stg='cd /staging/leuven/YOUR_STAGING'
+alias q='squeue --cluster=wice'
+alias ll='ls -lh'
+alias bpeek='~/bpeek.sh'
+
+# Change squeue default format to give more information
+export SQUEUE_FORMAT="%.14i %9P %15j %.8u %.2t %.20S %.12L %.5C %.7m %.4D %R"
