@@ -17,3 +17,17 @@ Some convenient aliases can be found [here](https://github.com/VIB-CCB-BioIT/VSC
 
 ## Dedicated BIG nodes
 For information and guidelines on using the dedicated BIG nodes (or requesting access to them), go to the handbook [here](https://docs.google.com/document/d/1bMqhykatkkATmWkqIdaXqQRv8GnfUOX9qSdDuShfmCI/edit), credits to Kris Davie.
+
+## Automatic SLURM emails
+If you want to receive emails when your job starts and end (with exit code). You can include in your submission script the following lines:
+```
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=FIRST.LASTNAME@kuleuven.be
+```
+If you're using outlook and you don't want SLURM emails to flood your inbox, you can move them automatically in a predefined folder.
+1. Make a new folder in your outlook, for instance: SLURM
+2. In outlook go to Tools --> Rules --> New Rule
+3. Select the sender: From - slurm@hpc.kuleuven.be
+4. Add the action: Move to --> SLURM
+
+This will move all future emails from slurm@hpc.kuleuven.be automatically to your SLURM folder.
