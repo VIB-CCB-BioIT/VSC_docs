@@ -31,3 +31,21 @@ If you're using outlook and you don't want SLURM emails to flood your inbox, you
 4. Add the action: Move to --> SLURM
 
 This will move all future emails from slurm@hpc.kuleuven.be automatically to your SLURM folder.
+
+## Installing micromamba
+micromamba is an alternative to (mini)conda, and comes with a faster libsolver. You can also install conda with the mamba solver if you prefer. For more information check [here](https://docs.vscentrum.be/software/python_package_management.html).
+Installing micromamba in your $VSC_DATA directory
+
+```
+curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj ${VSC_DATA}/micromamba
+
+# If using bash (default for most users).
+${VSC_DATA}/micromamba shell init -s bash -p ~/micromamba
+
+# Source the bashrc file
+source ~/.bashrc
+```
+
+In the case you use `zsh` instead of `bash`, make the following two changes:
+1. `-s bash` to `-s zsh`
+2. `source ~/.bashrc` to `source ~/.zshrc` 
