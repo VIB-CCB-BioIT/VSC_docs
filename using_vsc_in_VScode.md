@@ -32,6 +32,7 @@ Also note that the screenshots will most likely not reflect how your terminal/VS
     `srun -n 1 -c 1 --mem 10G --time=1:00:00 -A lp_lig -p batch --cluster wice --pty bash -l`
     <img width="646" alt="image" src="https://github.com/user-attachments/assets/619ed127-b84f-4efa-9f53-842ff1cb2352" style="border: 2px solid grey;">
 
+   In case you want to cancel a job, use `scancel --cluster wice JOB_ID`. Job ID can be found with the command at step 6. 
     
 5. Detach tmux session by writing `tmux detach` or by pressing the following keys: `control + b` followed by `d`. This ensures that your job stays alive for the entire duration, even if your local computer/laptop disconnects from the internet or goes to sleep.
 6. Check the node you have been assigned `squeue --cluster wice` and copy the node name specified under `NODELIST (REASON)` 
