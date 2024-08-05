@@ -27,7 +27,7 @@ source ~/.bashrc
 ```
 
 In the case you use `zsh` instead of `bash`, make the following two changes:
-1. `-s bash` to `-s zsh`
+1. `${VSC_DATA}/micromamba shell init -s bash -p ~/micromamba` to `${VSC_DATA}/micromamba shell init -s zsh -p ~/micromamba`
 2. `source ~/.bashrc` to `source ~/.zshrc` 
 
 ## Convenient command aliases
