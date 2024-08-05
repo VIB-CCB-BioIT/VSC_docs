@@ -2,7 +2,7 @@
 Guides, FAQ, and how-tos for VSC related activities
 
 ## Using the ssh config file
-[The config file](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/config) should be added on your local computer/laptop (the one you use to connect to the VSC). This file contains all the dedicated and batch nodes from KU Leuven VSC and can be used as a template. You have to make specific changes to this file before you can use this.
+[The config file](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/config) should be added on your local computer/laptop (the one you use to connect to the VSC). This file contains all the dedicated and batch nodes from KU Leuven VSC and can be used as a template. You have to make specific changes to this file before you can use this.
 Key changes to be made in each block are: vsc_id and, potentially the location of your `id_rsa` file.
 
 ## Daily workflow for setting up VS Code to work on the VSC
@@ -31,7 +31,7 @@ In the case you use `zsh` instead of `bash`, make the following two changes:
 2. `source ~/.bashrc` to `source ~/.zshrc` 
 
 ## Convenient command aliases
-Some convenient aliases can be found [here](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/VSC_aliases). Simply add them to your `.bashrc` or `.zshrc` (and reload the terminal or source the script like `source ~/.bashrc`). You can then use these commands instead of typing out the full command. For instance `q` instead of `squeue --cluster wice`. To use the `bpeek` alias, which looks at the current output of a running job, you need to have the [bpeek.sh](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/bpeek.sh) script located in your home folder (`~/bpeek.sh`).
+Some convenient aliases can be found [here](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/VSC_aliases). Simply add them to your `.bashrc` or `.zshrc` (and reload the terminal or source the script like `source ~/.bashrc`). You can then use these commands instead of typing out the full command. For instance `q` instead of `squeue --cluster wice`. To use the `bpeek` alias, which looks at the current output of a running job, you need to have the [bpeek.sh](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/bpeek.sh) script located in your home folder (`~/bpeek.sh`).
 
 ## Dedicated BIG nodes
 For information and guidelines on using the dedicated BIG nodes (or requesting access to them), go to the handbook [here](https://docs.google.com/document/d/1bMqhykatkkATmWkqIdaXqQRv8GnfUOX9qSdDuShfmCI/edit), credits to Kris Davie.
