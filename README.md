@@ -1,5 +1,5 @@
 # VSC_docs
-Guides, FAQ, and how-tos for VSC related activities
+Guides, FAQ, and how-tos for VSC related activities. This information is in addition to the official VSC documentation that you can find [here](https://docs.vscentrum.be).
 
 ## Using the ssh config file
 [The config file](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/config) should be added on your local computer/laptop (the one you use to connect to the VSC). This file contains all the dedicated and batch nodes from KU Leuven VSC and can be used as a template. You have to make specific changes to this file before you can use this.
