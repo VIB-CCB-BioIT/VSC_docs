@@ -5,6 +5,8 @@ Guides, FAQ, and how-tos for VSC related activities. This information is in addi
 [The config file](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/config) should be added on your local computer/laptop (the one you use to connect to the VSC). This file contains all the dedicated and batch nodes from KU Leuven VSC and can be used as a template. You have to make specific changes to this file before you can use this.
 Key changes to be made in each block are: vsc_id and, potentially the location of your `id_rsa` file.
 
+The config file linked above has all compute nodes listed. However, many of them are commented out since having many hosts in the configuration file can slow down VS Code by a lot in some versions. If this is the case, simply add the hosts that you actually need instead of all of them.
+
 ## Daily workflow for setting up VS Code to work on the VSC
 A step-by-step guide of how I use VS Code to work on the VSC is available [here](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/using_vsc_in_VScode.md)
 
