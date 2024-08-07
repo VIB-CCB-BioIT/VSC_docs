@@ -51,7 +51,8 @@ Changes required to submit to the non-dedicated GPU nodes is written after the r
 #SBATCH --mail-user=luuk.harbers@kuleuven.be
 ```
 
-### Array job (dedicated cpu)
+### Array job
+This example is to run an array job on multiple bam files on dedicated CPU nodes. This will spawn multiple slurm jobs (based on how large your array is), each with the specified resources requested.
 Be sure to change the number of array jobs based on how many you need to spawn (i.e. number of files to run)
 ```
 #!/bin/bash
@@ -63,8 +64,8 @@ Be sure to change the number of array jobs based on how many you need to spawn (
 #SBATCH --account=lp_big_wice_cpu
 #SBATCH --partition=dedicated_big_bigmem
 #SBATCH --cluster=wice
-#SBATCH --output=/staging/leuven/stg_00104/logs/%j.out                 # where to store the output ( %j is the JOBID )
-#SBATCH --error=/staging/leuven/stg_00104/logs/%j.err                  # where to store error messages
+#SBATCH --output=/staging/leuven/stg_00104/logs/%A_%a.out                 # where to store the output ( %A is the JOBID while %a is the current array ID )
+#SBATCH --error=/staging/leuven/stg_00104/logs/%A_%a.err                  # where to store error messages
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=luuk.harbers@kuleuven.be
 #SBATCH --array=0-9                                                    # This needs to be altered based on number of array jobs you want to spawn
