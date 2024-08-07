@@ -4,7 +4,7 @@ For these steps you need to have obtained a VSC account, added as a member for a
 Also note that the screenshots will most likely not reflect how your terminal/VScode/command prompt looks like.
 
 
-1. Open local terminal
+1. Open local terminal (this can be your normal terminal or the terminal in VS Code)
 2. Login to the login node: `ssh login` - after logging in, the genius login-screen should appear.
    <img width="563" alt="image" src="https://github.com/user-attachments/assets/2921f743-0f0d-41ab-a4a2-0b4ba9600fda" style="border: 2px solid grey;">
    
