@@ -16,7 +16,8 @@
 #SBATCH --mail-user=luuk.harbers@kuleuven.be
 ```
 
-### (dedicated) GPU
+### Dedicated GPU
+Changes required to submit to the non-dedicated GPU nodes is written after the relevant lines
 ```
 #!/bin/bash
 #SBATCH --nodes=1
@@ -51,6 +52,7 @@
 ```
 
 ### Array job (dedicated cpu)
+Be sure to change the number of array jobs based on how many you need to spawn (i.e. number of files to run)
 ```
 #!/bin/bash
 #SBATCH --nodes=1
