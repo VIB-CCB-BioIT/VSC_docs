@@ -50,3 +50,30 @@
 #SBATCH --mail-user=luuk.harbers@kuleuven.be
 ```
 
+### Array job (dedicated cpu)
+```
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=36
+#SBATCH --mem=500G
+#SBATCH --time=24:00:00
+#SBATCH --account=lp_big_wice_cpu
+#SBATCH --partition=dedicated_big_bigmem
+#SBATCH --cluster=wice
+#SBATCH --output=/staging/leuven/stg_00104/logs/%j.out                 # where to store the output ( %j is the JOBID )
+#SBATCH --error=/staging/leuven/stg_00104/logs/%j.err                  # where to store error messages
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=luuk.harbers@kuleuven.be
+#SBATCH --array=0-9                                                    # This needs to be altered based on number of array jobs you want to spawn
+
+
+# Define directories or a files to loop over. For example bam files in a specific directory
+BAMS=/some/dir/*bam
+
+# Get the current sample to run based on the SLURM_ARRAY_TASK_ID
+CURRENT_BAM=${BAMS[$SLURM_ARRAY_TASK_ID]}
+
+# Do stuff with current bam
+do_stuff($CURRENT_BAM)
+```
