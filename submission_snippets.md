@@ -68,7 +68,7 @@ Be sure to change the number of array jobs based on how many you need to spawn (
 #SBATCH --error=/staging/leuven/stg_00104/logs/%A_%a.err                  # where to store error messages
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=luuk.harbers@kuleuven.be
-#SBATCH --array=0-9                                                    # This needs to be altered based on number of array jobs you want to spawn
+#SBATCH --array=0-9                                                      # This needs to be altered based on number of array jobs you want to spawn
 
 
 # Define directories or a files to loop over. For example bam files in a specific directory
