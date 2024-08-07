@@ -79,4 +79,10 @@ CURRENT_BAM=${BAMS[$SLURM_ARRAY_TASK_ID]}
 
 # Do stuff with current bam
 do_stuff($CURRENT_BAM)
+
+# If instead you want to loop over rows of a file (for instance a file where each row is a chromosome)
+CURRENT_ROW=$(sed -n '${SLURM_ARRAY_TASK_ID}' < chroms.txt)
+
+# Do stuff per chromosome
+process_chrom($CURRENT_ROW)
 ```
