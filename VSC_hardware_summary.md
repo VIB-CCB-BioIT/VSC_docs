@@ -6,7 +6,7 @@
 * mem: 256 GB
 * cores: 72
 
-#### batch_sapphirerapids
+#### batch_sapphirerapids / batch_sapphirerapids_long
 * mem: 256 GB
 * cores: 96
 
@@ -28,7 +28,7 @@
 * cores: 64
 * gpus: 4
 
-#### interactive
+#### interactive / gpu_a100_debug
 * mem: 512 GB
 * cores: 64
 * gpus: 1
