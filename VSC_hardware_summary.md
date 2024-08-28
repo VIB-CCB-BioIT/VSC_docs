@@ -1,45 +1,10 @@
-## Summary of the hardware specs from different partitions
-
-### VSC KU Leuven
-
-#### batch / batch_long
-* mem: 256 GB
-* cores: 72
-
-#### batch_sapphirerapids / batch_sapphirerapids_long
-* mem: 256 GB
-* cores: 96
-
-#### bigmem
-* mem: 2 TB
-* cores: 72
-
-#### hugemem
-* mem: 8 TB
-* cores: 72
-
-#### gpu
-* mem: 512 GB
-* cores: 72
-* gpus: 4
-
-#### gpu_h100
-* mem: 768 GB
-* cores: 64
-* gpus: 4
-
-#### interactive / gpu_a100_debug
-* mem: 512 GB
-* cores: 64
-* gpus: 1
-
-### Dedicated BIG nodes
-
-#### dedcated_big_bigmem
-* mem: 2 TB
-* cores: 72
-
-#### dedicated_big_gpu
-* mem: 1 TB
-* cores: 72
-* gpus: 4
+| Node Type              | Cores | Memory   | GPUs | Dedicated nodes |
+|------------------------|-------|----------|------|----------------|
+| batch / batch_long     | 96    | 256 GB   | -    |                |
+| bigmem                 | 72    | 2 TB     | -    |                |
+| hugemem                | 72    | 8 TB     | -    |                |
+| gpu                    | 72    | 512 GB   | 4    |                |
+| gpu_h100               | 64    | 768 GB   | 4    |                |
+| interactive / gpu_a100_debug | 64    | 512 GB   | 1    |                |
+| dedcated_big_bigmem    | 72    | 2 TB     | -    | Yes            |
+| dedicated_big_gpu      | 72    | 1 TB     | 4    | Yes            |
