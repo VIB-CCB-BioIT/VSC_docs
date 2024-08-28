@@ -1,4 +1,4 @@
-| Node Type              | Cores | Memory   | GPUs | Dedicated nodes |
+| Partition name            | Cores | Memory   | GPUs | Dedicated nodes |
 |------------------------|-------|----------|------|----------------|
 | batch / batch_long     | 96    | 256 GB   | -    |                |
 | bigmem                 | 72    | 2 TB     | -    |                |
