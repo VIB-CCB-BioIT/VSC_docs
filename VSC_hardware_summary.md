@@ -1,6 +1,7 @@
 | Partition name            | Cores | Memory   | GPUs | Dedicated nodes |
 |------------------------|-------|----------|------|----------------|
-| batch / batch_long     | 96    | 256 GB   | -    |                |
+| batch / batch_long     | 72    | 256 GB   | -    |                |
+| sapphirerapids / sapphirerapids_long | 96 | 256 GB | - |
 | bigmem                 | 72    | 2 TB     | -    |                |
 | hugemem                | 72    | 8 TB     | -    |                |
 | gpu                    | 72    | 512 GB   | 4    |                |
