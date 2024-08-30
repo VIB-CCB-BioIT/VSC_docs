@@ -22,7 +22,7 @@
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=72
-#SBATCH --mem-per-cpu=111900M                                          # This is for hugemem, use 28000M for bigmem
+#SBATCH --mem-per-cpu=111900M                               # This is for hugemem, use 28000M for bigmem
 #SBATCH --time=72:00:00
 #SBATCH --account=lp_lvibccbeu
 #SBATCH --partition=hugemem
