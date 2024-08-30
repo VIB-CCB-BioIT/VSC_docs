@@ -1,5 +1,22 @@
 ## Different sbatch submission settings for commonly used nodes
 
+### batch
+```
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=36
+#SBATCH --mem=128G
+#SBATCH --time=24:00:00
+#SBATCH --account=lp_lvibccbeu
+#SBATCH --partition=hugemem
+#SBATCH --cluster=wice
+#SBATCH --output=${VSC_SCRATCH}/logs/%j.out                 # where to store the output ( %j is the JOBID )
+#SBATCH --error=${VSC_SCRATCH}/logs/%j.err                  # where to store error messages
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=your.email@kuleuven.be
+```
+
 ### bigmem/hugemem
 ```
 #!/bin/bash
@@ -10,10 +27,10 @@
 #SBATCH --account=lp_lvibccbeu
 #SBATCH --partition=hugemem
 #SBATCH --cluster=wice
-#SBATCH --output=/staging/leuven/stg_00104/logs/%j.out                 # where to store the output ( %j is the JOBID )
-#SBATCH --error=/staging/leuven/stg_00104/logs/%j.err                  # where to store error messages
+#SBATCH --output=${VSC_SCRATCH}/logs/%j.out                 # where to store the output ( %j is the JOBID )
+#SBATCH --error=${VSC_SCRATCH}/logs/%j.err                  # where to store error messages
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=luuk.harbers@kuleuven.be
+#SBATCH --mail-user=your.email@kuleuven.be
 ```
 
 ### Dedicated GPU
@@ -24,14 +41,14 @@ Changes required to submit to the non-dedicated GPU nodes is written after the r
 #SBATCH --tasks-per-node=72
 #SBATCH --mem=970G
 #SBATCH --time=72:00:00
-#SBATCH --account=lp_big_wice_gpu                                      # Use normal Account is using regular compute nodes
-#SBATCH --partition=dedicated_big_gpu                                  # Use gpu_a100 or gpu_h100 if using regular compute nodes
+#SBATCH --account=lp_big_wice_gpu                           # Use normal Account is using regular compute nodes
+#SBATCH --partition=dedicated_big_gpu                       # Use gpu_a100 or gpu_h100 if using regular compute nodes
 #SBATCH --gpus-per-node=4
 #SBATCH --cluster=wice
-#SBATCH --output=/staging/leuven/stg_00104/logs/%j.out                 # Where to store the output ( %j is the JOBID )
-#SBATCH --error=/staging/leuven/stg_00104/logs/%j.err                  # Where to store error messages
+#SBATCH --output=${VSC_SCRATCH}/logs/%j.out                 # Where to store the output ( %j is the JOBID )
+#SBATCH --error=${VSC_SCRATCH}/logs/%j.err                  # Where to store error messages
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=luuk.harbers@kuleuven.be
+#SBATCH --mail-user=your.email@kuleuven.be
 ```
 
 ### Dedicated CPU
@@ -45,10 +62,10 @@ Changes required to submit to the non-dedicated GPU nodes is written after the r
 #SBATCH --account=lp_big_wice_cpu
 #SBATCH --partition=dedicated_big_bigmem
 #SBATCH --cluster=wice
-#SBATCH --output=/staging/leuven/stg_00104/logs/%j.out                 # where to store the output ( %j is the JOBID )
-#SBATCH --error=/staging/leuven/stg_00104/logs/%j.err                  # where to store error messages
+#SBATCH --output=${VSC_SCRATCH}/logs/%j.out                 # where to store the output ( %j is the JOBID )
+#SBATCH --error=${VSC_SCRATCH}/logs/%j.err                  # where to store error messages
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=luuk.harbers@kuleuven.be
+#SBATCH --mail-user=your.email@kuleuven.be
 ```
 
 ### Array job
@@ -64,11 +81,11 @@ Be sure to change the number of array jobs based on how many you need to spawn (
 #SBATCH --account=lp_big_wice_cpu
 #SBATCH --partition=dedicated_big_bigmem
 #SBATCH --cluster=wice
-#SBATCH --output=/staging/leuven/stg_00104/logs/%A_%a.out                 # where to store the output ( %A is the JOBID while %a is the current array ID )
-#SBATCH --error=/staging/leuven/stg_00104/logs/%A_%a.err                  # where to store error messages
+#SBATCH --output=${VSC_SCRATCH}/logs/%A_%a.out                 # where to store the output ( %A is the JOBID while %a is the current array ID )
+#SBATCH --error=${VSC_SCRATCH}/logs/%A_%a.err                  # where to store error messages
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=luuk.harbers@kuleuven.be
-#SBATCH --array=0-9                                                      # This needs to be altered based on number of array jobs you want to spawn
+#SBATCH --array=0-9                                            # This needs to be altered based on number of array jobs you want to spawn
 
 
 # Define directories or a files to loop over. For example bam files in a specific directory
