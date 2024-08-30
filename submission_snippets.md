@@ -84,7 +84,7 @@ Be sure to change the number of array jobs based on how many you need to spawn (
 #SBATCH --output=${VSC_SCRATCH}/logs/%A_%a.out                 # where to store the output ( %A is the JOBID while %a is the current array ID )
 #SBATCH --error=${VSC_SCRATCH}/logs/%A_%a.err                  # where to store error messages
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=luuk.harbers@kuleuven.be
+#SBATCH --mail-user=your.email@kuleuven.be
 #SBATCH --array=0-9                                            # This needs to be altered based on number of array jobs you want to spawn
 
 
