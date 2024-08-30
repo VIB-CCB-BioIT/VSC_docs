@@ -17,7 +17,7 @@
 #SBATCH --mail-user=your.email@kuleuven.be
 ```
 
-### bigmem/hugemem
+### bigmem / hugemem
 ```
 #!/bin/bash
 #SBATCH --nodes=1
