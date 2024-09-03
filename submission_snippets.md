@@ -11,8 +11,8 @@
 #SBATCH --account=lp_lvibccbeu
 #SBATCH --partition=hugemem
 #SBATCH --cluster=wice
-#SBATCH --output=${VSC_SCRATCH}/logs/%j.out              # where to store the output ( %j is the JOBID )
-#SBATCH --error=${VSC_SCRATCH}/logs/%j.err               # where to store error messages
+#SBATCH --output=/path/to/directory/logs/%j.out              # where to store the output ( %j is the JOBID )
+#SBATCH --error=/path/to/directory/logs/%j.err               # where to store error messages
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=your.email@kuleuven.be
 ```
@@ -27,8 +27,8 @@
 #SBATCH --account=lp_lvibccbeu
 #SBATCH --partition=hugemem
 #SBATCH --cluster=wice
-#SBATCH --output=${VSC_SCRATCH}/logs/%j.out              # where to store the output ( %j is the JOBID )
-#SBATCH --error=${VSC_SCRATCH}/logs/%j.err               # where to store error messages
+#SBATCH --output=/path/to/directory/logs/%j.out              # where to store the output ( %j is the JOBID )
+#SBATCH --error=/path/to/directory/logs/%j.err               # where to store error messages
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=your.email@kuleuven.be
 ```
@@ -45,8 +45,8 @@ Changes required to submit to the non-dedicated GPU nodes is written after the r
 #SBATCH --partition=dedicated_big_gpu                    # Use gpu_a100 or gpu_h100 if using regular compute nodes
 #SBATCH --gpus-per-node=4
 #SBATCH --cluster=wice
-#SBATCH --output=${VSC_SCRATCH}/logs/%j.out              # Where to store the output ( %j is the JOBID )
-#SBATCH --error=${VSC_SCRATCH}/logs/%j.err               # Where to store error messages
+#SBATCH --output=/path/to/directory/logs/%j.out              # Where to store the output ( %j is the JOBID )
+#SBATCH --error=/path/to/directory/logs/%j.err               # Where to store error messages
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=your.email@kuleuven.be
 ```
@@ -62,8 +62,8 @@ Changes required to submit to the non-dedicated GPU nodes is written after the r
 #SBATCH --account=lp_big_wice_cpu
 #SBATCH --partition=dedicated_big_bigmem
 #SBATCH --cluster=wice
-#SBATCH --output=${VSC_SCRATCH}/logs/%j.out              # where to store the output ( %j is the JOBID )
-#SBATCH --error=${VSC_SCRATCH}/logs/%j.err               # where to store error messages
+#SBATCH --output=/path/to/directory/logs/%j.out              # where to store the output ( %j is the JOBID )
+#SBATCH --error=/path/to/directory/logs/%j.err               # where to store error messages
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=your.email@kuleuven.be
 ```
@@ -81,8 +81,8 @@ Be sure to change the number of array jobs based on how many you need to spawn (
 #SBATCH --account=lp_big_wice_cpu
 #SBATCH --partition=dedicated_big_bigmem
 #SBATCH --cluster=wice
-#SBATCH --output=${VSC_SCRATCH}/logs/%A_%a.out           # where to store the output ( %A is the JOBID while %a is the current array ID )
-#SBATCH --error=${VSC_SCRATCH}/logs/%A_%a.err            # where to store error messages
+#SBATCH --output=/path/to/directory/logs/%A_%a.out           # where to store the output ( %A is the JOBID while %a is the current array ID )
+#SBATCH --error=/path/to/directory/logs/%A_%a.err            # where to store error messages
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=your.email@kuleuven.be
 #SBATCH --array=0-9                                      # This needs to be altered based on number of array jobs you want to spawn
