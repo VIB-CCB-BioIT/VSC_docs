@@ -19,10 +19,13 @@ micromamba is an alternative to (mini)conda, and comes with a faster libsolver. 
 Installing micromamba in your $VSC_DATA directory
 
 ```
-curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj ${VSC_DATA}/micromamba
+mkdir ${VSC_DATA}/bin
+wget https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj ${VSC_DATA}/bin/micromamba
+# Might need install wget, otherwise can try the below command (was not working for a while..)
+#curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj ${VSC_DATA}/bin/micromamba
 
 # If using bash (default for most users).
-${VSC_DATA}/micromamba shell init -s bash -p ~/micromamba
+${VSC_DATA}/bin/micromamba shell init -s bash -p ${VSC_DATA}/micromamba
 
 # Source the bashrc file
 source ~/.bashrc
@@ -33,7 +36,7 @@ In the case you use `zsh` instead of `bash`, make the following two changes:
 2. `source ~/.bashrc` to `source ~/.zshrc` 
 
 ## Convenient command aliases
-Some convenient aliases can be found [here](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/VSC_aliases). Simply add them to your `.bashrc` or `.zshrc` (and reload the terminal or source the script like `source ~/.bashrc`). You can then use these commands instead of typing out the full command. For instance `q` instead of `squeue --cluster wice`. To use the `bpeek` alias, which looks at the current output of a running job, you need to have the [bpeek.sh](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/bpeek.sh) script located in your home folder (`~/bpeek.sh`).
+Some convenient aliases can be found [here](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/VSC_aliases). Simply add them to your `.bashrc` or `.zshrc` (and reload the terminal or source the script like `source ~/.bashrc`). You can then use these commands instead of typing out the full command. For instance `q` instead of `squeue --cluster wice`. To use the `bpeek` alias, which looks at the current output of a running job, you need to have the [bpeek.sh](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/bpeek.sh) script located in your home folder (`~/bpeek.sh`) and it has to be executable (`chmod +x ~/bpeek.sh`).
 
 ## Dedicated BIG nodes
 For information and guidelines on using the dedicated BIG nodes (or requesting access to them), go to the handbook [here](https://docs.google.com/document/d/1bMqhykatkkATmWkqIdaXqQRv8GnfUOX9qSdDuShfmCI/edit), credits to Kris Davie.
