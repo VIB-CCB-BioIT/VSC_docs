@@ -19,7 +19,7 @@ micromamba is an alternative to (mini)conda, and comes with a faster libsolver. 
 Installing micromamba in your $VSC_DATA directory
 
 ```
-cd ${VSC_DATA}/
+cd ${VSC_DATA}
 curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
 
 # If using bash (default for most users).
