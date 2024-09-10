@@ -30,7 +30,7 @@ source ~/.bashrc
 ```
 
 In the case you use `zsh` instead of `bash`, make the following two changes:
-1. `${VSC_DATA}/micromamba shell init -s bash -p ${VSC_DATA}/micromamba` to `${VSC_DATA}/micromamba shell init -s zsh -p ${VSC_DATA}/micromamba`
+1. `${VSC_DATA}/bin/micromamba shell init -s bash -p ${VSC_DATA}/micromamba` to `${VSC_DATA}/bin/micromamba shell init -s zsh -p ${VSC_DATA}/micromamba`
 2. `source ~/.bashrc` to `source ~/.zshrc` 
 
 ## Convenient command aliases
