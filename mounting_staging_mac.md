@@ -17,7 +17,7 @@ This should work on most Macbooks but it's only tested on the few that were avai
       alias mount-stg="sshfs login-genius:/staging/leuven/stg_xxxxx/ ~/Mounts/stg -o defer_permissions"
       alias umount-stg="umount ~/Mounts/stg"
       ```
-
+    You might need to change `login-genius` to whatever you have the VSC login set to in your `~/.ssh/config`
    
     3. Save and exit the file. If you used `nano` you can do so by the following keypresses: `Control + X` followed by `Y` to save it and `Enter` to keep the same file name.
 6. Source your zshrc file by writing `source ~/.zshrc` in your terminal
