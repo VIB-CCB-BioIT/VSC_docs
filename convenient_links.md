@@ -1,4 +1,4 @@
-# Convenient links
+# VSC / KU Leuven links
 
 ## Initial staging request
 
