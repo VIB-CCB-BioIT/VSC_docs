@@ -1,4 +1,6 @@
-## Different sbatch submission settings for commonly used nodes
+# Different sbatch submission settings for commonly used nodes
+
+## VSC (Tier 2)
 
 ### batch
 ```
@@ -114,3 +116,9 @@ file15.txt)
 process_file(${files[$SLURM_ARRAY_TASK_ID]})
 
 ```
+
+## VIB Compute Cluster
+
+### Interactive srun command
+
+`srun -n 1 -c 8 --mem 100G --time=9:00:00  -p hmem_128C_256T_2TB --pty bash -l`
