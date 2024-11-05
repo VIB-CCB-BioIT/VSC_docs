@@ -27,6 +27,8 @@ curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/mi
 # If using bash (default for most users).
 ${VSC_DATA}/bin/micromamba shell init -s bash -p ${VSC_DATA}/micromamba
 
+# Might need to remove -p if installing latest versions
+# ${VSC_DATA}/bin/micromamba shell init -s bash ${VSC_DATA}/micromamba
 # Source the bashrc file
 source ~/.bashrc
 ```
