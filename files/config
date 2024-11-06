@@ -13,69 +13,69 @@ Host *
 
 # VSC login nodes
 Host login login-genius
-	User vsc36452
+	User vsc12345
 	HostName %h.hpc.kuleuven.be
 	IdentityFile ~/.ssh/id_rsa
 
 # g28 and i28 nodes
 Host g28* i28*
-	User vsc36452
+	User vsc12345
 	HostName %h
 	ProxyCommand ssh login -W %h:22
 	IdentityFile ~/.ssh/id_rsa
 
 # k28 nodes
 Host k28*
-	User vsc36452
+	User vsc12345
 	HostName %h
 	ProxyCommand ssh login -W %h:22
 	IdentityFile ~/.ssh/id_rsa
 
 # l33 nodes
 Host l33*
-	User vsc36452
+	User vsc12345
 	HostName %h
 	ProxyCommand ssh login -W %h:22
 	IdentityFile ~/.ssh/id_rsa
 
 # m28 and m33 nodes
 Host m28* m33*
-	User vsc36452
+	User vsc12345
 	HostName %h
 	ProxyCommand ssh login -W %h:22
 	IdentityFile ~/.ssh/id_rsa
 
 # n28 nodes
 Host n28*
-	User vsc36452
+	User vsc12345
 	HostName %h
 	ProxyCommand ssh login -W %h:22
 	IdentityFile ~/.ssh/id_rsa
 
 # p33 nodes
 Host p33*
-	User vsc36452
+	User vsc12345
 	HostName %h
 	ProxyCommand ssh login -W %h:22
 	IdentityFile ~/.ssh/id_rsa
 
 # q16 and q28 nodes
 Host q16* q28*
-	User vsc36452
+	User vsc12345
 	HostName %h
 	ProxyCommand ssh login -W %h:22
 	IdentityFile ~/.ssh/id_rsa
 
 # r33 nodes
 Host r33*
-	User vsc36452
+	User vsc12345
 	HostName %h
 	ProxyCommand ssh login -W %h:22
 	IdentityFile ~/.ssh/id_rsa
 
 # s16 and s28 nodes
 Host s16* s28*
-	User vsc36452
+	User vsc12345
 	HostName %h
 	ProxyCommand ssh login -W %h:22
 	IdentityFile ~/.ssh/id_rsa
