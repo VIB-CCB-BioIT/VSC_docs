@@ -4,7 +4,7 @@
 | batch_sapphirerapids / batch_sapphirerapids_long | 96 | 256 GB | - | 72 hours <br>(168 hours for *_long)        |                |
 | bigmem                 | 72    | 2 TB     | -    | 72 hours         |                |
 | hugemem                | 72    | 8 TB     | -    | 72 hours         |                |
-| gpu                    | 72    | 512 GB   | 4    | 72 hours         |                |
+| gpu / gpu_a100                    | 72    | 512 GB   | 4    | 72 hours         |                |
 | gpu_h100               | 64    | 768 GB   | 4    | 72 hours         |                |
 | interactive / gpu_a100_debug | 64    | 512 GB   | 1    | 72 hours <br>(30 min for *_debug)         |                |
 | dedicated_big_bigmem    | 72    | 2 TB     | -    | 168 hours         | Yes            |
