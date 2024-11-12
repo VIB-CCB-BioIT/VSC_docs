@@ -12,7 +12,7 @@ Make sure you (created and) activated the environment where you want to install 
 2. Install languageserver and httpgd R packages
 
 The `languageserver` package allows VSCode to communicate with R and allows autocompletion and a whole lot of other functionalities. The `httpgd` package improves the plotting functionality within VSCode.
-To install these packages, open R (type `R` in terminal) and run: `install.packages(c("languageserver", "httpg"))`.
+To install these packages, open R (type `R` in terminal) and run: `install.packages(c("languageserver", "httpgd"))`.
 
 3. Install VSCode extensions
 
