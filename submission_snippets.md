@@ -11,7 +11,7 @@
 #SBATCH --mem=128G
 #SBATCH --time=24:00:00
 #SBATCH --account=lp_lvibccbeu
-#SBATCH --partition=hugemem
+#SBATCH --partition=batch
 #SBATCH --cluster=wice
 #SBATCH --output=/path/to/directory/logs/%j.out              # where to store the output ( %j is the JOBID )
 #SBATCH --error=/path/to/directory/logs/%j.err               # where to store error messages
