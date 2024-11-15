@@ -25,9 +25,9 @@ curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/mi
 # wget -qO- https://micromamba.snakepit.net/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
 
 # If using bash (default for most users).
-${VSC_DATA}/bin/micromamba shell init -s bash -p ${VSC_DATA}/micromamba
+${VSC_DATA}/bin/micromamba shell init -s bash -r ${VSC_DATA}/micromamba
 
-# Might need to remove -p if installing latest versions
+# Might need to change -r to -p if installing older versions
 # ${VSC_DATA}/bin/micromamba shell init -s bash ${VSC_DATA}/micromamba
 # Source the bashrc file
 source ~/.bashrc
