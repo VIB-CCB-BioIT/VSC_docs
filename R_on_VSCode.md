@@ -33,6 +33,9 @@ Search for the setting `r.rterm`. You need to give the path to your radian locat
 
 Search for the setting `r.rpath`. This is the path to your R installation. You can find the path by typing `which R`. Depending on if you use the module from VSC or if you installed R through conda make sure the module is loaded or the environment is activated.
 
+Note: If these settings don't show up, make sure that the R extension is installed (also if you are connected to a compute node)
+
+
 6. Enable httpgd plotting and bracketed paste
 
 Enable the following two settings in VS Code settings (see previous point on how to open settings).
