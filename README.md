@@ -1,4 +1,4 @@
-# VSC_docs
+# VSC docs
 Guides, FAQ, and how-tos for VSC related activities. This information is in addition to the official VSC documentation that you can find [here](https://docs.vscentrum.be).
 
 ## Using the ssh config file
