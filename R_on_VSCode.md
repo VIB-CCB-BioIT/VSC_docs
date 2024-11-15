@@ -56,7 +56,7 @@ ggplot(data, aes(x = x, y = y)) +
 
 It should also open a separate window for viewing objects using `View()` or a help window when using `?functionName`.
 
-Common Errors:
+## Common Errors:
 1. When trying to launch R terminal, it almost immediately gives an error with exit code 1.
 
     If you try to run `radian` from your terminal and you receive the following:
