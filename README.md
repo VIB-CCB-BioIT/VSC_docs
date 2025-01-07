@@ -37,8 +37,12 @@ In the case you use `zsh` instead of `bash`, make the following two changes:
 1. `${VSC_DATA}/bin/micromamba shell init -s bash -p ${VSC_DATA}/micromamba` to `${VSC_DATA}/bin/micromamba shell init -s zsh -p ${VSC_DATA}/micromamba`
 2. `source ~/.bashrc` to `source ~/.zshrc`
 
-In case you want to always activate the base environment by default you can run:
-`micromamba config set auto_activate_base true`
+Some good configuration settings to have in micromamba can be set as follows. This will always activate `base` environment when you start a terminal, and add `conda-forge` and `nodefaults` as default channels.
+```
+micromamba config append channels conda-forge
+micromamba config append channels nodefaults
+micromamba config set auto_activate_base true
+```
 
 ## Convenient command aliases
 Some convenient aliases can be found [here](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/VSC_aliases). Simply add them to your `.bashrc` or `.zshrc` (and reload the terminal or source the script like `source ~/.bashrc`). You can then use these commands instead of typing out the full command. For instance `q` instead of `squeue --cluster wice`. To use the `bpeek` alias, which looks at the current output of a running job, you need to have the [bpeek.sh](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/bpeek.sh) script located in your home folder (`~/bpeek.sh`) and it has to be executable (`chmod +x ~/bpeek.sh`).
