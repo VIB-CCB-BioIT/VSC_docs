@@ -5,7 +5,7 @@ Guides, FAQ, and how-tos for VSC related activities. This information is in addi
 [The config file](https://github.com/VIB-CCB-BioIT/VSC_docs/blob/main/files/config) should be added on your local computer/laptop (the one you use to connect to the VSC). This file contains all the dedicated and batch nodes from KU Leuven VSC and can be used as a template. You have to make specific changes to this file before you can use this.
 Key changes to be made in each block are: vsc_id and, potentially the location of your `id_rsa` file.
 
-The config file linked above has all compute nodes listed. However, many of them are commented out since having many hosts in the configuration file can slow down VS Code by a lot in some versions. If this is the case, simply add the hosts that you actually need instead of all of them.
+The config file linked above has all compute nodes listed (that I am aware off).
 
 ## Installing micromamba
 micromamba is an alternative to (mini)conda, and comes with a faster libsolver. You can also install conda with the mamba solver if you prefer. For more information check [here](https://docs.vscentrum.be/software/python_package_management.html).
