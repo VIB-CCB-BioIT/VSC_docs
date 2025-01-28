@@ -75,7 +75,8 @@ It should also open a separate window for viewing objects using `View()` or a he
       raise RuntimeError("Cannot determine R HOME.")
     RuntimeError: Cannot determine R HOME.
     ```
-
+   I have experienced that sometimes you need to reload a new compute node for it to go into effect. Otherwise you can try the following:
+   
    You need to add your R_Home to the VSCode settings.
    Go open the VS Code settings (but JSON) by going to the command palette (as explained in step 7) and searching for "Settings JSON" and open the user settings.
    There add the following (don't forget to add a comma to the previous setting):
