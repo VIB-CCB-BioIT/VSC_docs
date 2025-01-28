@@ -58,5 +58,5 @@ Common errors:
     
     Potential fixes:
     
-    1. Your `$VSC_HOME` is full. Make sure that you have enough space for VS Code to download a few files to your home directory (a couple of Mb should be enough). To check sizes of files/directories in your $VSC_HOME, you can run: `du -hs ~/* ~/.`
+    1. Your `$VSC_HOME` is full. Make sure that you have enough space for VS Code to download a few files to your home directory (a couple of Mb should be enough). To check sizes of files/directories in your `$VSC_HOME`, you can run: `du -hs ~/* ~/.`
     2. The node you are trying to ssh into is not in your ssh config file. This should also show up as the node not showing up in the list after clicking `Connect to host`. Make sure that all the nodes that you might connect to are included in your configuration file on the computer that you’re trying to connect with (not on the VSC). The file is typically located in `~/.ssh/config`
