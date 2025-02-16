@@ -39,7 +39,7 @@ Also note that the screenshots will most likely not reflect how your terminal/VS
     
     <img width="646" alt="image" src="https://github.com/user-attachments/assets/317f68df-465a-4040-b5fb-5557f006f18f" style="border: 2px solid grey;">
     
-7. Launch VS Code and click the blue remote-connect button at the bottom left. Select `connect to host` from the dropdown menu or `connect current window to host` if you don’t want to open a new VS Code window. If this doesn’t show up, you might have to select `ssh` in the dropdown menu first. See screenshots below
+7. Launch VS Code and click the blue remote-connect button at the bottom left (make sure the extension `Remote - ssh` is installed. Select `connect to host` from the dropdown menu or `connect current window to host` if you don’t want to open a new VS Code window. If this doesn’t show up, you might have to select `ssh` in the dropdown menu first. See screenshots below
 
 <img width="1018" alt="vs_2" src="https://github.com/user-attachments/assets/957b9afe-1464-482d-9bd4-5ead8cd8b4cd" style="border: 2px solid grey;">
 
