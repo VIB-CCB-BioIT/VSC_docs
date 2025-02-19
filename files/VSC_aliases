@@ -6,3 +6,21 @@ alias bpeek='~/bpeek.sh'
 
 # Change squeue default format to give more information
 export SQUEUE_FORMAT="%.14i %9P %15j %.8u %.2t %.20S %.12L %.5C %.7m %.4D %R"
+
+# Export VSC variables
+#export SLURM_ACCOUNT="lp_lvibccbeu"
+export SLURM_ACCOUNT="lp_lig"
+export VSC_DEDICATED_QUEUES="dedicated_big_gpu,dedicated_big_bigmem"
+
+# Nextflow variables
+export NXF_WORK="$VSC_SCRATCH/work"
+export NXF_HOME="$VSC_DATA/software/"
+
+# Singularity/Apptainer variables
+export APPTAINER_CACHEDIR="$VSC_SCRATCH/.apptainer/cache"
+export SINGULARITY_CACHEDIR="$VSC_SCRATCH/.singularity/cache"
+export SINGULARITY_TMPDIR="$VSC_SCRATCH/tmp"
+export APPTAINER_TMPDIR="$VSC_SCRATCH/tmp"
+
+# Export tempdirs
+export TMPDIR="$VSC_SCRATCH/tmp"
