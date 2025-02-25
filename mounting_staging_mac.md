@@ -22,4 +22,6 @@ This should work on most Macbooks but it's only tested on the few that were avai
     3. Save and exit the file. If you used `nano` you can do so by the following keypresses: `Control + X` followed by `Y` to save it and `Enter` to keep the same file name.
 6. Source your zshrc file by writing `source ~/.zshrc` in your terminal
 
+7. Before being able to use this, you might need to enable the firewall. You can do so by connecting to the VSC as you normally would.
+
 Now you should be able to open your terminal at any time and type `mount-stg` and it will mount the staging directory to your local finder. Once doing so, you will see a folder appear called `fuse-t` with your staging directory in there.
